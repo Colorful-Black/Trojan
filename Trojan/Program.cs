@@ -27,10 +27,10 @@ namespace TrojanService
                 {
                     Console.WriteLine("客户端已离线:" + ex.Message);
                 }
+                server.Stop();
+                Console.ReadKey();
 
             }
-            server.Stop();
-            Console.ReadKey();
         }
 
     }
